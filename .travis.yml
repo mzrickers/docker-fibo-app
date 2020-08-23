@@ -22,12 +22,12 @@ after_success:
   - docker push mzrickers/multi-server
   - docker push mzrickers/multi-worker
 
-# make sure this is to the right
+# make sure this is to the left
 deploy:
   provider: elasticbeanstalk
   region: us-east-2
   app: multi-docker
-  env: MultiDocker-env
+  env: MultiDocker-env-1
   bucket_name: elasticbeanstalk-us-east-2-547059424994
   bucket_path: docker-multi
   on:
