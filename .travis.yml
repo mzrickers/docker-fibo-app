@@ -22,6 +22,7 @@ after_success:
   - docker push mzrickers/multi-server
   - docker push mzrickers/multi-worker
 
+# make sure this is to the right
 deploy:
   provider: elasticbeanstalk
   region: us-east-2
